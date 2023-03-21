@@ -5,14 +5,14 @@
 
 def sum_square(x,y):
     for z in range(x,y+1):
-        print(z*z)
+        print('El cuadrado de ' + str(z) + ' es ' + str(z*z))
 
 def main():
-    print('Hello user!')
-    a = int(input('insert first number: '))
-    b = int(input('insert second number: '))
+    print('¡Hola usuario! Ingrese 2 números para conocer los cuadrados de los números en ese intervalo')
+    a = int(input('Ingrese primer numero: '))
+    b = int(input('Ingrese segundo número: '))
     sum_square(a,b)
-    print('goodbye user!')
+    print('¡Chau usuario!')
 
 main()
 
