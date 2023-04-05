@@ -71,5 +71,64 @@ def celToFar2(f):
     print('Celcius: ' + str(floated))
 
 # for x in range(10, 120+1, 10):
-#    celToFar2(x)
+#    celToFar2 (x)
+
+""" Escribir una función que dado un número entero devuelva 1 si el mismo
+es impar y 0 si fuera par. """
+
+def pair():
+    x = int(input('Ingrese un número: '))
+    y = x % 2
+    print(str(y))
+        
+
+# pair()
+
+""" Escribir una función que dado un número entero devuelva 0 si el mismo es impar y 1 si
+fuera par. """
+
+def pair2():
+    x = int(input('Ingrese un número: ')) % 2
+    if x == 0:
+        print(1)
+    else:
+        print(0)
+
+# pair2()
+
+""" Escribir una función que dado un número entero devuelva el dígito de las unidades. Por
+ejemplo, para 153 debe devolver 3."""
+
+def units():
+    x = int(input('Número: '))
+    unit = x % 10
+    print(unit)
+
+# units()
+
+""" Escribir una función que dado un número devuelva el primer número múltiplo de 10
+inferior a él. Por ejemplo, para 153 debe devolver 150. """
+
+def rounder():
+    x = int(input('Número: '))
+    unit = (x // 10) * 10
+    print(unit)
+    
+# rounder()
+
+""" Escribir un programa que imprima todos los números pares entre dos números
+que se le pidan al usuario. """
+
+def pairer(x,y):
+    for z in range(x,y+1):
+        if z % 2 == 0:
+            print(z)
+
+# pairer(int(input('Número: ')),int(input('Número: ')))
+
+""" Escribir un programa que le pregunte al usuario un número N e imprima los
+primeros N números triangulares, junto con su índice. Los números triangulares se obtienen
+mediante la suma de los números naturales desde 1 hasta n. Es decir, si se piden los primeros 5
+números triangulares, el programa debe imprimir: """ 
+
 
