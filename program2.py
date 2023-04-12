@@ -128,7 +128,55 @@ def pairer(x,y):
 
 """ Escribir un programa que le pregunte al usuario un número N e imprima los
 primeros N números triangulares, junto con su índice. Los números triangulares se obtienen
-mediante la suma de los números naturales desde 1 hasta n. Es decir, si se piden los primeros 5
-números triangulares, el programa debe imprimir: """ 
+mediante la suma de los números naturales desde 1 hasta n: """ 
+
+def triangular():
+    tri = int(input('Ingrese un número para conocer los X primeros números triángulares: '))
+    for x in range(1,tri+1):
+        n = str(round((x**2+x) / 2))     
+        print(str(x) + " - " + n)
+
+# triangular()
+
+""" Escribir un programa que tome una cantidad m de valores ingresados por el
+usuario, a cada uno le calcule el factorial e imprima el resultado junto con el número 
+de orden correspondiente. """
+
+def factorial(x):
+    fact=1
+    for y in range(1,x+1):
+        fact = fact * y
+    return fact
+
+def factorials():
+    n = int(input('Ingrese la cantidad de números a calcular su factorial: '))
+    for x in range(n):
+        f = int(input('Factorial de: '))
+        result = factorial(f)
+        print(f,'-',result)
+
+# factorials()
 
 
+""" Escribir un programa que imprima por pantalla todas las fichas de dominó, de
+una por línea y sin repetir. """
+
+def imprimir_fichas_domino():
+    for i in range(7):
+        for j in range(i,7):
+            print(i,"/",j,end=" | ")
+        print()
+
+# imprimir_fichas_domino()
+
+""" Modificar el programa anterior para que pueda generar fichas de un juego que
+puede tener números de 0 a n. """
+
+def imprimir_custom_domino():
+    n = int(input('Cantidad de fichas: '))
+    for i in range(n+1):
+        for j in range(i,n+1):
+            print(i,"/",j,end=" | ")
+        print()
+
+# imprimir_custom_domino()
