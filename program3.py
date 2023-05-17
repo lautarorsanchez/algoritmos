@@ -1,3 +1,5 @@
+import math 
+
 """ Escribir una función repite_hola que reciba como parámetro un número entero
 n y escriba por pantalla el mensaje "Hola" n veces. Invocarla con distintos valores de n. """
 
@@ -138,3 +140,28 @@ def to_time(total):
 """ Escribir una función que, dados cuatro números, devuelva el mayor producto
 de dos de ellos. Por ejemplo, si recibe los números 1, 5, -2, -4 debe devolver 8, que es el producto
 más grande que se puede obtener entre ellos (8 = −2 × −4). """
+
+def maxProduct(a,b,c,d):
+    prod1 = a * b
+    prod2 = a * c
+    prod3 = a * d
+    prod4 = b * c
+    prod5 = b * d
+    prod6 = c * d
+    maxproduct = max([prod1, prod2, prod3, prod4, prod5, prod6])
+    return maxproduct
+
+# print(maxProduct(1,-10,5,-7))
+
+""" Escribir una función que reciba las coordenadas de un vector en R3 (x,y,z) y devuelva
+la norma del vector """
+
+def normaVector(x,y,z):
+    num1 = x**2
+    num2 = y**2
+    num3 = z**2
+    sum = num1 + num2 + num3
+    norma = math.sqrt(sum)
+    return norma
+
+# print(normaVector(3,2,-4))
